@@ -10,11 +10,7 @@ namespace comicBooks.Controllers
     {
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Saturday)
-            {
-                return Redirect("/");
-            }
-            return Content("Hello from MVC content result");
+            return View();
         }
     }
 }
